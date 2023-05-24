@@ -9,7 +9,7 @@
  *
  * @tokens: pointer to array of tokens
  *
- * Return: nothing
+ * Return: nothing or void
  */
 
 void tokenize_command(char *command, char *tokens[])

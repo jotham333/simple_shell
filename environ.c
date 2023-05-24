@@ -5,7 +5,7 @@
  *
  * @name: name of the environment variable
  *
- * Return: void
+ * Return: void or nothing
  */
 
 char *_getenv(const char *name)

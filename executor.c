@@ -7,7 +7,7 @@
  *
  * @tokens: array of tokens
  *
- * Return: void
+ * Return: void or nothing
  */
 
 

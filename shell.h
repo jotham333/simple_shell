@@ -68,4 +68,4 @@ void print_prompt(void);
 void *_realloc(void *ptr, size_t new_size);
 void *_memcpy(void *dest, const void *src, size_t num_bytes);
 
-#endif
+#endif /* SHELL_H */

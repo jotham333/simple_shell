@@ -27,7 +27,7 @@ char *_strdup(char *str)
 
 /**
  * _strchr - search for a character in a string
- * @str: pointer to the string
+ * @str: pointer to the string to search
  * @character: the character to be searched
  * Return: pointer to string if success and NULL otherwise
  */

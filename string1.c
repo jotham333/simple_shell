@@ -5,7 +5,7 @@
 /**
  * _strlen - calculate the length of a string
  *
- * @str: pointer to the string
+ * @str: pointer to the string to be counted
  *
  * Return: the number of string counted
  */

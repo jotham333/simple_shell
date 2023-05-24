@@ -6,7 +6,7 @@
 /**
  * print_prompt - prompt the user for input
  *
- * Return: nothing
+ * Return: nothing to return
  */
 
 

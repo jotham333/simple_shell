@@ -3,7 +3,7 @@
 /**
  * env_builtin - print the environment
  *
- * Return: void
+ * Return: void or nothing
  */
 
 void env_builtin(void)

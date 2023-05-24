@@ -20,7 +20,7 @@ _strlen(): This function gets the length of a string.
 _strcmp(): This function compares two strings.
 _strncmp(): This function compares two strings for a specified number of characters.
 _strcspn(): This function gets the length of the longest prefix of a string that does not contain any characters from another string.
-_strcpy(): This function copies a string.
+_strcpy(): This function copies a string
 _strcat(): This function concatenates two strings.
 _strdup(): This function duplicates a string.
 _strchr(): This function finds the first occurrence of a character in a string.

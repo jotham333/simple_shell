@@ -8,7 +8,7 @@
  *
  * @src: poiter to the source to copy the str from
  *
- * @num_bytes: number of bytes to copy
+ * @num_bytes: number of bytes to copy to dest
  *
  * Return: pointer to the dest
  */
