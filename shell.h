@@ -71,9 +71,10 @@ void tokenizeString(const char *input, const char *delimiters);
 void sigint_handler(int signal);
 int _atoi(const char *str);
 void print_prompt(void);
+int _putchar(char c);
 
 /* memory */
 void *_realloc(void *ptr, size_t new_size);
 void *_memcpy(void *dest, const void *src, size_t num_bytes);
 
-#endif /*SHELL_H */
+#endif

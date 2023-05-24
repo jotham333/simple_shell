@@ -23,14 +23,14 @@ void run_interactive_mode(void)
 		bytes_read = _getline(&input, &len, stdin);
 		if (bytes_read == -1)
 		{
-			perror("Failed to getline");
+			_putchar('\n');
 			exit(EXIT_FAILURE);
 		}
 
 		if (bytes_read == 1)
 			continue;
 
-		input[strcspn(input, "\n")] = '\0';
+		input[_strcspn(input, "\n")] = '\0';
 		process_input(input);
 		free(input);
 		input = NULL;
@@ -61,7 +61,7 @@ void run_noninteractive_mode(void)
 		if (bytes_read == 1)
 			continue;
 
-		input[strcspn(input, "\n")] = '\0';
+		input[_strcspn(input, "\n")] = '\0';
 		process_input(input);
 		free(input);
 		input = NULL;
