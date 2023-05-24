@@ -28,7 +28,7 @@ void run_noninteractive_mode(void);
 void env_builtin(void);
 void exit_builtin(char **tokens);
 int cd_builtin(char *path);
-/*char *get_current_dir();*/
+char *get_current_dir();
 
 /* executor.c */
 int execute_command(char **tokens);

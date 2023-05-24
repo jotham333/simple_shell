@@ -4,7 +4,7 @@
 /**
  * run_interactive_mode - runs shell program in interactive mode
  *
- * Return: void
+ * Return: void or nothing
  */
 
 

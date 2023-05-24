@@ -15,7 +15,7 @@ int _putchar(char c)
 /**
  * print_prompt - prompt the user for input
  *
- * Return: nothing to return
+ * Return: Nothing
  */
 
 

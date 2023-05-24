@@ -3,7 +3,7 @@
 /**
  * env_builtin - print the environment
  *
- * Return: void or nothing
+ * Return: void
  */
 
 void env_builtin(void)
@@ -106,26 +106,3 @@ int cd_builtin(char *path)
 
 	return (0);
 }
-
-/**
- * get_current_dir - get the current directory
- *
- * Return: the current directory
- *
-
-char *get_current_dir()
-{
-	char *cwd = malloc(MAX_INPUT_SIZE);
-
-	if (cwd == NULL)
-	{
-		perror("malloc failed");
-		exit(EXIT_FAILURE);
-	}
-	if (getcwd(cwd, MAX_INPUT_SIZE) == NULL)
-	{
-		perror("Failed to getcwd");
-		exit(EXIT_FAILURE);
-	}
-	return (cwd);
-}*/
