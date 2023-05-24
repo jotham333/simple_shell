@@ -23,7 +23,7 @@ void run_interactive_mode(void)
 		bytes_read = _getline(&input, &len, stdin);
 		if (bytes_read == -1)
 		{
-			_putchar('\n');
+			perror("");
 			exit(EXIT_FAILURE);
 		}
 

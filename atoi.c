@@ -21,12 +21,12 @@ int _putchar(char c)
 
 void print_prompt(void)
 {
-	char *cwd = get_current_dir();
+	/*char *cwd = get_current_dir();*/
 
-	write(STDOUT_FILENO, "cisfun:", _strlen("cisfun:"));
-	write(STDOUT_FILENO, cwd, _strlen(cwd));
-	write(STDOUT_FILENO, "$ ", 2);
-	free(cwd);
+	write(STDOUT_FILENO, "#cisfun$ ", _strlen("#cisfun$ "));
+	/*write(STDOUT_FILENO, cwd, _strlen(cwd));*/
+	/*write(STDOUT_FILENO, "$ ", 2);*/
+	/*free(cwd);*/
 }
 
 

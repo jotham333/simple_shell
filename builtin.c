@@ -111,7 +111,7 @@ int cd_builtin(char *path)
  * get_current_dir - get the current directory
  *
  * Return: the current directory
- */
+ *
 
 char *get_current_dir()
 {
@@ -128,4 +128,4 @@ char *get_current_dir()
 		exit(EXIT_FAILURE);
 	}
 	return (cwd);
-}
+}*/
