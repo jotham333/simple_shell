@@ -1,51 +1,17 @@
 #include "shell.h"
 
-/**
- * main - the main function of the shell program
- *
- * Return: 0 always successful
- */
-
-
 int main(void)
 {
-	char *input = NULL;
-	size_t len = 0;
-	ssize_t bytes_read;
-	int interactive =  isatty(STDIN_FILENO);
+	int interactive = isatty(STDIN_FILENO);
 
-	signal(SIGINT, sigint_handler);
-
-	while (1)
+	if (interactive)
 	{
-		if (!interactive)
-		{
-			break;
-		}
-
-		print_prompt();
-
-		bytes_read = _getline(&input, &len, stdin);
-		if (bytes_read == -1)
-		{
-			perror("getline");
-			exit(EXIT_FAILURE);
-		}
-		if (bytes_read == 1)
-		{
-			continue;
-		}
-
-		input[_strcspn(input, "\n")] = '\0';
-
-		process_input(input);
-
-		free(input);
-		input = NULL;
-		len = 0;
-
-		fflush(stdout);
+		run_interactive_mode();
+	}
+	else
+	{
+		run_noninteractive_mode();
 	}
 
-	return (0);
+	return 0;
 }

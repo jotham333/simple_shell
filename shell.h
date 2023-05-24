@@ -21,6 +21,9 @@ extern char **environ;
 #define MAX_INPUT_SIZE 1024
 #define MAX_ARGUMENTS 1024
 
+/* shell interactive mode */
+void run_interactive_mode();
+void run_noninteractive_mode();
 
 /* builtin.c */
 void env_builtin(void);
@@ -58,6 +61,11 @@ char *_strdup(char *str);
 char *_strchr(char *str, char character);
 int _isspace(int c);
 
+/*alias.c*/
+void alias_builtin(char **tokens);
+void unset_alias(char *name);
+void unalias_builtin(char **tokens);
+
 /* atoi */
 void tokenizeString(const char *input, const char *delimiters);
 void sigint_handler(int signal);
@@ -68,4 +76,4 @@ void print_prompt(void);
 void *_realloc(void *ptr, size_t new_size);
 void *_memcpy(void *dest, const void *src, size_t num_bytes);
 
-#endif /* SHELL_H */
+#endif
