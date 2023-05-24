@@ -1,5 +1,11 @@
 #include "shell.h"
 
+/**
+ * _putchar - print a character to the console
+ * @c: the character to be printed to standard output.
+ *
+ * Return: interger
+ */
 
 int _putchar(char c)
 {

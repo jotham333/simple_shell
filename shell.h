@@ -12,7 +12,6 @@
 #include <fcntl.h>
 #include <limits.h>
 #include <ctype.h>
-#include <stdbool.h>
 #include <signal.h>
 
 
@@ -61,11 +60,6 @@ char *_strdup(char *str);
 char *_strchr(char *str, char character);
 int _isspace(int c);
 
-/*alias.c*/
-void alias_builtin(char **tokens);
-void unset_alias(char *name);
-void unalias_builtin(char **tokens);
-
 /* atoi */
 void tokenizeString(const char *input, const char *delimiters);
 void sigint_handler(int signal);
@@ -77,4 +71,4 @@ int _putchar(char c);
 void *_realloc(void *ptr, size_t new_size);
 void *_memcpy(void *dest, const void *src, size_t num_bytes);
 
-#endif
+#endif /* SHELL_H */
