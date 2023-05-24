@@ -35,26 +35,9 @@ void env_builtin(void)
 
 void exit_builtin(char **tokens)
 {
-	int status;
-	char *error;
+	(void)tokens;
 
-	if (tokens[1] != NULL)
-	{
-		status = _atoi(tokens[1]);
-		if (status == 0 && _strcmp(tokens[1], "0") != 0)
-		{
-			error = "Usage: exit [status]\n";
-			write(STDERR_FILENO, error, _strlen(error));
-		}
-		else
-		{
-			exit(status);
-		}
-	}
-	else
-	{
-		exit(EXIT_SUCCESS);
-	}
+	exit(0);
 }
 
 /**
