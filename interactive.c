@@ -1,6 +1,14 @@
 #include "shell.h"
 
-void run_interactive_mode()
+
+/**
+ * run_interactive_mode - runs shell program in interactive mode
+ *
+ * Return: nothing
+ */
+
+
+void run_interactive_mode(void)
 {
 	char *input = NULL;
 	size_t len = 0;
@@ -31,7 +39,16 @@ void run_interactive_mode()
 	}
 }
 
-void run_noninteractive_mode()
+
+
+
+/**
+ * run_noninteractive_mode - run shell program on non-interactive mode
+ *
+ * Return: nothing
+ */
+
+void run_noninteractive_mode(void)
 {
 	char *input = NULL;
 	size_t len = 0;

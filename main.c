@@ -1,5 +1,13 @@
 #include "shell.h"
 
+
+
+/**
+ * main - main function of the shell program
+ *
+ * Return: 0 always
+ */
+
 int main(void)
 {
 	int interactive = isatty(STDIN_FILENO);
@@ -13,5 +21,5 @@ int main(void)
 		run_noninteractive_mode();
 	}
 
-	return 0;
+	return (0);
 }
