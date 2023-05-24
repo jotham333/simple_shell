@@ -30,7 +30,7 @@ void env_builtin(void)
  *
  * @tokens: array of tokens
  *
- * Return: void
+ * Return: void or Nothing
  */
 
 void exit_builtin(char **tokens)
